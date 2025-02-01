@@ -10,7 +10,7 @@ export async function sendVerificationEmail(
   try {
     // Send the verification email using the Resend service
     await resend.emails.send({
-      from: "YourName <yourname@feedback360.xyz>", // Ensure this is a valid and authorized sender address
+      from: "SilentVoice <SilentVoice@feedback360.xyz>", // Ensure this is a valid and authorized sender address
       to: [email],
       subject: "Mystery Message || Verification code",
       react: VerificationEmail({ username, otp: verifyCode }), // Rendering the React component for the email body
